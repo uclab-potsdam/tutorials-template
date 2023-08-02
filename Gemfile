@@ -8,7 +8,7 @@ gem 'github-pages', group: :jekyll_plugins
 
 gem "jekyll", "~> 3.9.3"
 
-gem "just-the-docs", "~> 0.5.4"
+# gem "just-the-docs", "~> 0.5.4"
 
 gem "jekyll-paginate", "~> 1.1"
 
