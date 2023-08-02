@@ -259,7 +259,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll (~> 3.9.0)
+  jekyll (~> 3.9.3)
   jekyll-paginate (~> 1.1)
   just-the-docs (~> 0.5.4)
   webrick (~> 1.8)
