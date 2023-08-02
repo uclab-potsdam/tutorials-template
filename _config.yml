@@ -1,1 +1,126 @@
 theme: just-the-docs
+
+# Define Jekyll collections
+collections:
+  # Define a collection named "filter", its documents reside in the "_filter" directory
+  abstract:
+    permalink: "/:collection/:path/"
+    output: true
+
+  connect:
+    permalink: "/:collection/:path/"
+    output: true
+
+  elaborate:
+    permalink: "/:collection/:path/"
+    output: true
+
+  encode:
+    permalink: "/:collection/:path/"
+    output: true
+  
+  extract:
+    permalink: "/:collection/:path/"
+    output: true
+
+  filter:
+    permalink: "/:collection/:path/"
+    output: true
+
+  gamification:
+    permalink: "/:collection/:path/"
+    output: true
+
+  history:
+    permalink: "/:collection/:path/"
+    output: true
+
+  overview:
+    permalink: "/:collection/:path/"
+    output: true
+
+  participation:
+    permalink: "/:collection/:path/"
+    output: true
+  
+  history:
+    permalink: "/:collection/:path/"
+    output: true
+
+  overview:
+    permalink: "/:collection/:path/"
+    output: true
+
+  participation:
+    permalink: "/:collection/:path/"
+    output: true
+
+  reconfigure:
+    permalink: "/:collection/:path/"
+    output: true
+
+  search:
+    permalink: "/:collection/:path/"
+    output: true
+
+just_the_docs:
+  # Define which collections are used in just-the-docs
+  collections:
+    # Reference the "filter" collection
+    filter:
+      # Give the collection a name
+      name: Filter
+      # Exclude the collection from the navigation
+      # Supports true or false (default)
+      # nav_exclude: true
+      # Fold the collection in the navigation
+      # Supports true or false (default)
+      # nav_fold: true  # note: this option is new in v0.4
+      # Exclude the collection from the search
+      # Supports true or false (default)
+      # search_exclude: true
+    abstract:
+
+      name: Abstract
+
+    connect:
+      name: Connect
+
+    elaborate:
+      name: Elaborate
+
+    encode:
+      name: Encode
+    
+    extract:
+      name: Extract
+
+    filter:
+      name: Filter 
+
+    gamification:
+      name: Gamification
+
+    history:
+      name: History
+
+    overview:
+      name: Overview
+
+    participation:
+      name: Participation
+    
+    history:
+      name: History
+
+    overview:
+      name: Name
+
+    participation:
+      name: Participation
+
+    reconfigure:
+      name: Reconfigure
+
+    search:
+      name: Search
