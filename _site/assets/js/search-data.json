@@ -1,23 +1,37 @@
 {"0": {
+    "doc": "About",
+    "title": "About",
+    "content": "I am about!!!! . ",
+    "url": "/about",
+    
+    "relUrl": "/about"
+  },"1": {
     "doc": "Home",
     "title": "Documentation of UClab coding challenges",
     "content": "Here lives the documentation for the coding challenges. Each challenge will have one or more outcome. Outcomes are short (and focused!) examples that illustrate how to code a specific feature of a visualization. Features are drawn from Figueiras (2015) 1 and Brehmer and Munzner (2013) 2 . | Figueiras, Ana. “Towards the understanding of interaction in information visualization.” 2015 19th International conference on information visualisation. IEEE, 2015. &#8617; . | Brehmer, Matthew, and Tamara Munzner. “A multi-level typology of abstract visualization tasks.” IEEE transactions on visualization and computer graphics 19.12 (2013): 2376-2385. &#8617; . | . ",
     "url": "/#documentation-of-uclab-coding-challenges",
     
     "relUrl": "/#documentation-of-uclab-coding-challenges"
-  },"1": {
+  },"2": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
-  },"2": {
+  },"3": {
     "doc": "Example 1",
     "title": "Example 1",
     "content": "Hellooooo! . ",
     "url": "/example-1",
     
     "relUrl": "/example-1"
+  },"4": {
+    "doc": "Example 2",
+    "title": "Example 2",
+    "content": "Another example . ",
+    "url": "/example-2",
+    
+    "relUrl": "/example-2"
   }
 }
