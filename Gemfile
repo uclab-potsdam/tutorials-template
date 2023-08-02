@@ -6,7 +6,7 @@ source "https://rubygems.org"
 # gem "rails"
 gem 'github-pages', group: :jekyll_plugins
 
-gem "jekyll", "~> 3.9.0"
+gem "jekyll", "~> 3.9.3"
 
 gem "just-the-docs", "~> 0.5.4"
 
