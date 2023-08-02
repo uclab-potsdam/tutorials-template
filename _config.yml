@@ -1,5 +1,10 @@
 title: Documentation
-remote_theme: just-the-docs
+theme: just-the-docs
+
+repository: uclab-potsdam/tutorials-template
+
+url: https://uclab-potsdam.github.io/tutorials-template/
+baseurl: ""
 
 # Define Jekyll collections
 collections:
