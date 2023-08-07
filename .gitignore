@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Remove data folder from all subfolders to keep it lightweight
+data/

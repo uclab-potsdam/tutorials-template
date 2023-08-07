@@ -15,3 +15,7 @@ article {
     width: 90%;
     height: 100vh;
 }
+
+.article-container {
+    padding-top: 2rem;
+}
