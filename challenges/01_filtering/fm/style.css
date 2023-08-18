@@ -12,10 +12,85 @@ main {
 
 article {
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
     height: 100vh;
+    /* background-color: pink; */
 }
 
 .article-container {
     padding-top: 2rem;
+}
+
+.article-container>.double-range-container {
+    width: 50%;
+    border: 1px solid aqua;
+    margin: 0;
+
+}
+
+.range-container {
+    display: flex;
+    flex-direction: column;
+}
+
+range {
+    position: relative;
+    min-height: 50px;
+}
+
+.form-container {
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+input[type=range]::-webkit-slider-thumb,
+input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    pointer-events: all;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #c6c6c6;
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+    background: #f7f7f7;
+}
+
+input[type=range]::-webkit-slider-thumb:active {
+    box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+    -webkit-box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+}
+
+input[type=number] {
+    color: #8a8383;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background-color: #C6C6C6;
+    pointer-events: none;
+}
+
+#fromSlider {
+    height: 0;
+    z-index: 1;
 }

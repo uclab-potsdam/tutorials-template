@@ -12,15 +12,35 @@
     <main class="container">
         <article>
             <div class="article-container">
-                <!-- Add your content here -->
-                <h1>Hello world!</h1>
-                <p>We are motivated to learn new coding things!</p>
+                <div class="double-range-container">
+                    <div class="range-container">
+                        <range>
+                            <input id="from-slider" class="data-slide-range" type="range" value="10" min="0"
+                                max="100" />
+                            <input id="to-slider" class="data-slide-range" type="range" value="90" min="0" max="100" />
+                        </range>
+                    </div>
+                    <div class="form-container">
+                        <form class="from-input">
+                            <div class="form-label-container">
+                                Min
+                            </div>
+                            <input class="form-input" type="number" id="from-input" value="10" min="0" max="100" />
+                        </form>
+                        <form class="to-input">
+                            <div class="form-label-container">
+                                Max
+                            </div>
+                            <input class="form-input" type="number" id="to-input" value="90" min="0" max="100" />
+                        </form>
+                    </div>
+                </div>
             </div>
         </article>
     </main>
 
     <!-- Add other script files here -->
-    <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
