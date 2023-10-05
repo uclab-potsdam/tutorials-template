@@ -13,8 +13,9 @@
         <article>
             <div class="heading-container">
                 <div class="container">
-                    <h1>Top 100 companies</h1>
-                    <h2>Sorted according to yearly <select name="companies" id="variables"></select></h2>
+                    <h2>Top 300 companies for yearly <select name="companies" id="variables"></select></h2>
+                    <p class="explanation-text">The filter below shows where the majorities of companies are positioned
+                        within the range of each category. Use the handles to select only a portion of the data.</p>
                 </div>
                 <div class="double-range-container">
                     <div class="visualization-container">
@@ -26,16 +27,17 @@
                             <input id="to-slider" class="data-slide-range" type="range" value="0" min="0" max="100" />
                         </range>
                     </div>
-                    <div class="form-container">
-                        <form class="from-input">
-                            <input disabled class="form-input" type="number" id="from-input" value="0" min="0"
-                                max="100" />
-                        </form>
-                        <form class="to-input">
-                            <input disabled class="form-input" type="number" id="to-input" value="0" min="0"
-                                max="100" />
-                        </form>
-                    </div>
+                </div>
+                <div class="form-container">
+                    <form class="from-input">
+                        <input disabled size="1" class="form-input" type="number" id="from-input" value="0" min="0"
+                            max="100" />
+                        Bln$
+                    </form>
+                    <form class="to-input">
+                        <input disabled class="to-input" type="number" id="to-input" value="0" min="0" max="100" />
+                        Bln$
+                    </form>
                 </div>
             </div>
             <div class="data-container">

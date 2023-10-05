@@ -4,14 +4,17 @@ body,
 h1,
 h2,
 p,
-div {
+div,
+select {
     margin: 0 auto;
     /* font-family: "Georgia", Georgia, serif; */
     font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-    font-size: 50px;
+h1,
+h2,
+select {
+    font-size: 20px;
     font-weight: normal;
     /* text-align: left; */
 }
@@ -24,27 +27,39 @@ main {
 article {
     margin: 0 auto;
     width: 90%;
-    /* height: 100vh; */
-    /* background-color: pink; */
+}
+
+select {
+    padding: 0;
+    background: none;
+    border: none;
+    color: rgb(176, 50, 50);
+    text-decoration: underline dotted;
+    text-decoration-color: rgb(176, 50, 50);
+    text-decoration-thickness: 2px;
 }
 
 .heading-container {
     padding-top: 2rem;
     position: sticky;
-    /* width: 80%; */
     background-color: rgba(255, 255, 255, 0.98);
     top: 0;
 }
 
-.heading-container>.double-range-container,
+.heading-container>.double-range-container {
+    width: 50%;
+    margin: 6% auto;
+}
+
 .data-container {
     width: 50%;
     margin: 5% auto;
 }
 
-.container>h1,
-.container>h2 {
-    text-align: center;
+.container>h2,
+.container>.explanation-text {
+    width: 50%;
+    margin-top: 1rem;
 }
 
 .range-container {
@@ -53,24 +68,29 @@ article {
 }
 
 range {
+    width: 100%;
     position: relative;
     min-height: 25px;
+    top: -1px;
 }
 
 .visualization-container {
     width: inherit;
     height: 10vh;
     position: absolute;
-    top: 48%;
     z-index: -1;
+    /* background-color: pink; */
 }
 
 .visualization-container>#visualization {
-    width: 100%;
+    width: 99%;
     height: 100%;
+    border: 3px solid black;
+
 }
 
 .form-container {
+    width: 50%;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -80,13 +100,25 @@ input[type=range]::-webkit-slider-thumb,
 input[type=range]::-moz-range-thumb {
     -webkit-appearance: none;
     pointer-events: all;
-    width: 1px;
+    width: 5px;
     height: 35px;
-    background-color: #ffffff00;
+    background-color: #000000;
     border-radius: 1px;
-    border: 3px solid rgb(43, 20, 20);
+    border: none;
     box-shadow: 0 0 0px 0px #3d0d0d3a;
     cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
 input[type=range]::-webkit-slider-thumb:hover {
@@ -94,12 +126,11 @@ input[type=range]::-webkit-slider-thumb:hover {
 }
 
 input[type=number] {
-    color: #ff4d4d;
-    width: 50px;
+    color: #3d0d0d;
+    font-size: inherit;
     height: 30px;
-    /* font-size: 20px; */
     border: none;
-    /* border: 1px solid #ff4d4d; */
+    background-color: transparent;
 }
 
 input[type=number]::-webkit-inner-spin-button {
@@ -117,17 +148,23 @@ input[type="range"] {
     height: 2px;
     width: 100%;
     position: absolute;
-    background-color: #ffdede;
+    background-color: black;
     pointer-events: none;
-}
-
-.to-input>.form-label-container {
-    text-align: right;
 }
 
 #from-slider {
     height: 0;
     z-index: 1;
+    left: -2.5px;
+}
+
+#to-slider {
+    right: -3px;
+}
+
+.to-input {
+    text-align: right;
+    /* position: absolute; */
 }
 
 .data-container>.list-container>#data-list {
