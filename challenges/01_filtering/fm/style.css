@@ -131,6 +131,7 @@ input[type=number] {
     height: 30px;
     border: none;
     background-color: transparent;
+    text-align: center;
 }
 
 input[type=number]::-webkit-inner-spin-button {
@@ -145,11 +146,11 @@ input[type=number]::-webkit-outer-spin-button {
 input[type="range"] {
     -webkit-appearance: none;
     appearance: none;
+    pointer-events: none;
     height: 2px;
     width: 100%;
     position: absolute;
     background-color: black;
-    pointer-events: none;
 }
 
 #from-slider {
@@ -199,10 +200,11 @@ input[type="range"] {
 }
 
 #data-list>li>.list-item-container>div.company-name {
-    width: 65%;
     white-space: nowrap;
-    overflow: hidden;
+    overflow: scroll;
     text-overflow: ellipsis;
+    /* width: fit-content; */
+    z-index: -1;
 }
 
 .invisible {
@@ -211,4 +213,42 @@ input[type="range"] {
 
 .visible {
     display: static;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #data-list>li {
+        font-size: 16px;
+    }
+
+    #data-list>li>.list-item-container>div.company-name {
+        width: 60%;
+    }
+
+    #data-list>li>.list-item-container>div.profit {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .container>h2,
+    .container>.explanation-text,
+    .form-container,
+    .heading-container>.double-range-container,
+    .data-container {
+        width: 95%;
+    }
+
+    .visualization-container {
+        height: 5vh;
+    }
+
+    #data-list>li>.list-item-container>div.company-name {
+        width: 60%;
+    }
+
+    #data-list>li>.list-item-container>div.profit {
+        width: 40%;
+    }
 }
