@@ -48,7 +48,7 @@ select {
 
 .heading-container>.double-range-container {
     width: 50%;
-    margin: 6% auto;
+    margin: 5% auto 5% auto;
 }
 
 .data-container {
@@ -77,6 +77,7 @@ range {
 .visualization-container {
     width: inherit;
     height: 10vh;
+    max-height: 60px;
     position: absolute;
     z-index: -1;
     /* background-color: pink; */
