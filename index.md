@@ -6,7 +6,7 @@ description: "Just the Docs is a responsive Jekyll theme with built-in search th
 permalink: /
 ---
 
-# Documentation of UClab coding challenges
+# Documentation of UCLAB coding challenges
 
 Here lives the documentation for the coding challenges. Each challenge will have one or more outcome.
 Outcomes are short (and focused!) examples that illustrate how to code a specific feature of a visualization.

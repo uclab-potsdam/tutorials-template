@@ -7,7 +7,7 @@
     "relUrl": "/about"
   },"1": {
     "doc": "Home",
-    "title": "Documentation of UClab coding challenges",
+    "title": "Documentation of UCLAB coding challenges",
     "content": "Here lives the documentation for the coding challenges. Each challenge will have one or more outcome. Outcomes are short (and focused!) examples that illustrate how to code a specific feature of a visualization. Features are drawn from Figueiras (2015) 1 and Brehmer and Munzner (2013) 2 . | Figueiras, Ana. “Towards the understanding of interaction in information visualization.” 2015 19th International conference on information visualisation. IEEE, 2015. &#8617; . | Brehmer, Matthew, and Tamara Munzner. “A multi-level typology of abstract visualization tasks.” IEEE transactions on visualization and computer graphics 19.12 (2013): 2376-2385. &#8617; . | . ",
     "url": "/#documentation-of-uclab-coding-challenges",
     
@@ -20,13 +20,48 @@
     
     "relUrl": "/"
   },"3": {
-    "doc": "Example 1",
-    "title": "Example 1",
-    "content": "Hellooooo! . ",
-    "url": "/example-1",
+    "doc": "Double range filter",
+    "title": "Double range filter with heatmap",
+    "content": "Vanilla JS . This double range slider has an integrated heatmap to allow readers to filter entries based on data density. The example is built using vanilla js and is useful to grasp how to implement very basic interactions. | Concept | Data | Interface elements | Code logic | . ",
+    "url": "/double-range-filter#double-range-filter-with-heatmap",
     
-    "relUrl": "/example-1"
+    "relUrl": "/double-range-filter#double-range-filter-with-heatmap"
   },"4": {
+    "doc": "Double range filter",
+    "title": "Concept",
+    "content": "When working with data, one very elementary form of interaction is filtering. By performing filtering operations, users decide which items make or not the cut. It’s a form of complexity reduction and it can happen in many ways. Again, a very simple form of presentation for large datasets is the creation of a list, including all items — unordered or ordered based on one or more rules. Lists are useful and simple, they ideally show everything the user needs to know about one instance. Digital interfaces allow for lists to become interactive, meaning that users are not forced to go from the beginning to the end hoping to spot interesting entities, but they become able to filter, search, and re-arrange items. When searching or re-arranging, users treat lists as the context of interaction. Filtering bears similarities with folding and unfolding a piece of paper. At any point, the user is able to shrink and expand the length of their list. The reference context is not lost. Individual entities remain part of their list, but are granted priority over others. Caption of image, source: wikimedia commons, MoMa . ",
+    "url": "/double-range-filter#concept",
+    
+    "relUrl": "/double-range-filter#concept"
+  },"5": {
+    "doc": "Double range filter",
+    "title": "Data",
+    "content": " ",
+    "url": "/double-range-filter#data",
+    
+    "relUrl": "/double-range-filter#data"
+  },"6": {
+    "doc": "Double range filter",
+    "title": "Interface elements",
+    "content": " ",
+    "url": "/double-range-filter#interface-elements",
+    
+    "relUrl": "/double-range-filter#interface-elements"
+  },"7": {
+    "doc": "Double range filter",
+    "title": "Code logic",
+    "content": ". References . ",
+    "url": "/double-range-filter#code-logic",
+    
+    "relUrl": "/double-range-filter#code-logic"
+  },"8": {
+    "doc": "Double range filter",
+    "title": "Double range filter",
+    "content": " ",
+    "url": "/double-range-filter",
+    
+    "relUrl": "/double-range-filter"
+  },"9": {
     "doc": "Example 2",
     "title": "Example 2",
     "content": "Another example . ",
