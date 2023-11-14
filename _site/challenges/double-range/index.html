@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge #01 – Filtering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <article>
+            <div class="heading-container">
+                <div class="container">
+                    <h2>Top 300 companies for yearly <select name="companies" id="variables"></select></h2>
+                    <p class="explanation-text">The filter below shows where the majorities of companies are positioned
+                        within the range of each category. Use the handles to select only a portion of the data.</p>
+                </div>
+                <div class="double-range-container">
+                    <div class="visualization-container">
+                        <div id="visualization"></div>
+                    </div>
+                    <div class="range-container">
+                        <range>
+                            <input id="from-slider" class="data-slide-range" type="range" value="0" min="0" max="100" />
+                            <input id="to-slider" class="data-slide-range" type="range" value="0" min="0" max="100" />
+                        </range>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <form class="from-input">
+                        min
+                        <input disabled size="1" class="form-input" type="number" id="from-input" value="0" min="0"
+                            max="100" />
+                        Bln$
+                    </form>
+                    <form class="to-input">
+                        max
+                        <input disabled size="1" class="to-input" type="number" id="to-input" value="0" min="0"
+                            max="100" />
+                        Bln$
+                    </form>
+                </div>
+            </div>
+            <div class="data-container">
+                <div class="list-container">
+                    <ul id="data-list">
+                    </ul>
+                </div>
+            </div>
+
+        </article>
+    </main>
+
+    <!-- Add other script files here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+body,
+h1,
+h2,
+p,
+div,
+select {
+    margin: 0 auto;
+    /* font-family: "Georgia", Georgia, serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+select {
+    font-size: 20px;
+    font-weight: normal;
+    /* text-align: left; */
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+article {
+    margin: 0 auto;
+    width: 90%;
+}
+
+select {
+    padding: 0;
+    background: none;
+    border: none;
+    color: rgb(176, 50, 50);
+    text-decoration: underline dotted;
+    text-decoration-color: rgb(176, 50, 50);
+    text-decoration-thickness: 2px;
+}
+
+.heading-container {
+    padding-top: 2rem;
+    position: sticky;
+    background-color: rgba(255, 255, 255, 0.98);
+    top: 0;
+}
+
+.heading-container>.double-range-container {
+    width: 50%;
+    margin: 5% auto 5% auto;
+}
+
+.data-container {
+    width: 50%;
+    margin: 5% auto;
+}
+
+.container>h2,
+.container>.explanation-text {
+    width: 50%;
+    margin-top: 1rem;
+}
+
+.range-container {
+    display: flex;
+    flex-direction: column;
+}
+
+range {
+    width: 100%;
+    position: relative;
+    min-height: 25px;
+    top: -1px;
+}
+
+.visualization-container {
+    width: inherit;
+    height: 10vh;
+    max-height: 60px;
+    position: absolute;
+    z-index: -1;
+    /* background-color: pink; */
+}
+
+.visualization-container>#visualization {
+    width: 99%;
+    height: 100%;
+    border: 3px solid black;
+
+}
+
+.form-container {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type=range]::-webkit-slider-thumb,
+input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    pointer-events: all;
+    width: 5px;
+    height: 35px;
+    background-color: #000000;
+    border-radius: 1px;
+    border: none;
+    box-shadow: 0 0 0px 0px #3d0d0d3a;
+    cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+    background: #f7f7f7;
+}
+
+input[type=number] {
+    color: #3d0d0d;
+    font-size: inherit;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    pointer-events: none;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+}
+
+#from-slider {
+    height: 0;
+    z-index: 1;
+    left: -2.5px;
+}
+
+#to-slider {
+    right: -3px;
+}
+
+.to-input {
+    text-align: right;
+    /* position: absolute; */
+}
+
+.data-container>.list-container>#data-list {
+    padding: initial;
+    list-style-type: none;
+}
+
+#data-list>li {
+    margin: 2% auto;
+    border: 3px solid rgb(176, 50, 50);
+    font-size: 24px;
+}
+
+#data-list>li>.list-item-container {
+    display: flex;
+}
+
+#data-list>li>.list-item-container>div {
+    margin: 0;
+}
+
+#data-list>li>.list-item-container>div>div {
+    padding: 0.5rem 1rem;
+}
+
+#data-list>li>.list-item-container>div.profit {
+    margin-left: auto;
+    width: 35%;
+    border-left: 3px solid rgb(176, 50, 50);
+    text-align: center;
+    background-color: rgb(255, 245, 240);
+}
+
+#data-list>li>.list-item-container>div.company-name {
+    white-space: nowrap;
+    overflow: scroll;
+    text-overflow: ellipsis;
+    /* width: fit-content; */
+    z-index: -1;
+}
+
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: static;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #data-list>li {
+        font-size: 16px;
+    }
+
+    #data-list>li>.list-item-container>div.company-name {
+        width: 60%;
+    }
+
+    #data-list>li>.list-item-container>div.profit {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .container>h2,
+    .container>.explanation-text,
+    .form-container,
+    .heading-container>.double-range-container,
+    .data-container {
+        width: 95%;
+    }
+
+    .visualization-container {
+        height: 5vh;
+    }
+
+    #data-list>li>.list-item-container>div.company-name {
+        width: 60%;
+    }
+
+    #data-list>li>.list-item-container>div.profit {
+        width: 40%;
+    }
+}
