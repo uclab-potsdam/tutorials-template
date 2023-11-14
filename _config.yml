@@ -131,8 +131,3 @@ just_the_docs:
 
     search:
       name: Search
-
-
-callouts:
-  important:
-    color: pink
