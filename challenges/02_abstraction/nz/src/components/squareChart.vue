@@ -134,8 +134,7 @@ export default {
         }
       })
     },
-    stepClass (index) {
-      if (index === this.clickedRectIndex) return 'red'
+    stepClass () {
       if (this.step === 1) return 'blue'
       if (this.step === 2) return 'green'
       return ''
@@ -152,13 +151,13 @@ export default {
       this.clickedRectIndex = index
       console.log('index: ' + index)
       console.table(country)
-      const size = 1000
-      const zoomFactor = 2 // Adjust the zoom factor as needed
-      const newViewBoxWidth = size / zoomFactor
-      const newViewBoxHeight = size / zoomFactor
-      const newViewBoxX = 0 - (size / 2 - country.x) + newViewBoxWidth
-      const newViewBoxY = 0 - (size / 2 - country.y) + newViewBoxHeight
-      this.viewBox = `${newViewBoxX} ${newViewBoxY} ${newViewBoxWidth} ${newViewBoxHeight}`
+      // const size = 1000
+      // const zoomFactor = 2 // Adjust the zoom factor as needed
+      // const newViewBoxWidth = size / zoomFactor
+      // const newViewBoxHeight = size / zoomFactor
+      // const newViewBoxX = 0 - (size / 2 - country.x) + newViewBoxWidth
+      // const newViewBoxY = 0 - (size / 2 - country.y) + newViewBoxHeight
+      this.viewBox = `${300} ${300} ${1000} ${1000}`
       console.table(country)
       console.table(this.viewBox)
     }
