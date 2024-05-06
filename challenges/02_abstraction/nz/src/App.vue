@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <squareChart :data="squareChartData" title="CO2 emissions per country" xKey="Country" aKey="C02value" />
+    <squareChart :data="squareChartData" title="CO2 emissions per country" xKey="Country" aKey="C02 per capita (t CO2\/yr)" />
   </div>
 </template>
 
